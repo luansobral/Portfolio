@@ -1,0 +1,262 @@
+:root {
+    --background: #E4F1EB;
+    --text: #11221C;
+    --accent: #8851A4;
+    --primary-btn: #2D5C4E;
+    --secondary-btn: #978EC7;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--background);
+    font-family: 'Familjen Grotesk', Helvetica, sans-serif;
+}
+
+header{
+    height: 90px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left: 4vw;
+    font-size: 10px;
+}
+
+header a{
+    text-decoration: none;
+    color: var(--txt);
+}
+
+header h1{
+    font-size: 4.7em;
+    color: var(--text);
+    letter-spacing: 2.3px;
+}
+
+nav{
+    margin-left: auto;
+    width: 60vw;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 4vw;
+}
+
+.menu-item{
+    list-style-type: none;
+    font-weight: 500;
+    display: inline;
+    margin-left: 5vw;
+}
+
+nav a{
+    color: var(--primary-btn);
+    font-size: 2.35em;
+}
+
+nav li:hover{
+    border-bottom: solid 2px var(--primary-btn);
+    padding-bottom: 2px;
+}
+
+/******************************************************************HOME****************************************************************/
+
+section{
+    margin-top: 50px;
+    /*background-color: var(--accent);*/
+}
+
+#home{
+    display: flex;
+    height: 550px;
+    justify-content: center;
+}
+
+#home img{
+    margin-left: 20vw;
+    filter: drop-shadow(4px 4px 5px #414040);
+}
+
+.content{
+    height: 100%;
+    font-size: 8px;
+}
+
+.content h3{
+    color: var(--primary-btn);
+    font-weight: 400;
+    font-size: 5em;
+    margin-top: 3.4em;
+}
+
+.content h1{
+    color: var(--text);
+    font-weight: 500;
+    font-size: 12em;
+    line-height: 1em;
+}
+
+.content h2{
+    color: var(--primary-btn);
+    font-weight: 400;
+    font-size: 6em;
+    margin-bottom: 0.7em;
+}
+
+.btn1, .btn2{
+    height: 56px;
+    width: 40%;
+    border-radius: 18px;
+    border: none;
+    color: var(--background);
+    font-family: 'Familjen Grotesk', Helvetica, sans-serif;
+    font-size: 2.7em;
+}
+
+.content .btn1{
+    background-color: var(--primary-btn);
+}
+
+.content .btn2{
+    margin-left: 19%;
+    background-color: var(--secondary-btn);
+}
+
+.btn1:hover, .btn2:hover{
+    cursor: pointer;
+    transition: 0.25s;
+    box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.37);
+    transform: translateY(-5px);
+}
+
+/*****************************************************************EXPERIENCIAS************************************************************/
+#experiencias{
+    margin-top: 110px;
+    font-size: 10px;
+}
+
+#experiencias h1{
+    font-size: 4.8em;
+}
+
+#experiencias article{
+    display: flex;
+    border-radius: 18px;
+    padding: 35px;
+    justify-content: space-around;
+}
+
+#experiencias  img{
+   height: 80%;
+}
+
+.exp1{
+    background-color: var(--primary-btn);
+    color: var(--background);
+    margin: 50px 20vw;
+    width: 60vw;
+}
+
+.exp2{
+    background-color: var(--secondary-btn);
+    color: var(--background);
+    margin: 0 20vw;
+    width: 60vw;
+}
+
+.content{
+    width: 40%;
+}
+
+article .content h1{
+    margin-bottom: 25px;
+    color: var(--background);
+}
+
+.exp1 p, .exp2 p, .exp1 a, .exp2 a{
+    font-size: 2.2em;
+}
+
+#experiencias p{
+    margin-bottom: 20px;
+}
+
+#experiencias a{
+    font-size: 2.2em;
+    color: var(--background);
+    text-decoration: none;
+}
+
+#experiencias a:hover{
+    text-decoration: underline;
+}
+
+/**************************************************************PREFERÊNCIAS***************************************************************/
+
+#preferencias{
+    margin-top: 110px;
+    font-size: 10px;
+}
+
+#preferencias h1{
+    font-size: 4.8em;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.container-pref{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    width: 85vw;
+    margin: 0 auto;
+}
+
+.item-pref{
+    height: 200px;
+    width: 200px;
+    background-color: #BCDCCD;
+    padding: auto;
+    padding-top: 20px;
+    border-radius: 18px;
+}
+
+.item-pref h1{
+    color: var(--primary-btn);
+    font-size: 20px;
+}
+
+.item-pref img{
+    height: 60%;
+    display: block;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+/**************************************************************    SOBRE    ***************************************************************/
+
+#sobre{
+    margin-top: 110px;
+    font-size: 10px;
+}
+
+#sobre h1{
+    font-size: 4.8em;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#sobre ul{
+    margin-left: 50px;
+}
+
+#sobre ul li{
+    line-height: 40px;
+    font-size: 25px;
+}
